@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Product Landing Page</title>
+</head>
+<body>
+
+  <header>
+    <h1>Your Product Name</h1>
+  </header>
+
+  <section class="product-info">
+    <img src="product-image.jpg" alt="Product Image">
+    <p>Description of your awesome product.</p>
+    <button id="buyButton">Buy Now</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Your Company Name</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.product-info {
+  text-align: center;
+  padding: 2em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+</style>
+<script>
+document.getElementById('buyButton').addEventListener('click', function() {
+  alert('Thank you for purchasing our product!');
+});
+</script>
+</html>
